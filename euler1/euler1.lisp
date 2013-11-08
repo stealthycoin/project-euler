@@ -2,7 +2,7 @@
 ;; Author: John Carlyle
 ;; Date: 1/27/12
 
-(defun euler1 (limit)
+(defun euler1 (&optional (limit 1000))
   (let ((s 0))
     (dotimes (i limit)
       (when (or
