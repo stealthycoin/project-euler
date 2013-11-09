@@ -1,15 +1,12 @@
+;; Project Euler Problem 3
+;; Author: John Carlyle
+;; Date: 
 
-(defun palp (candidate)
-  (progn
-    (print candidate)
-    (if (or (zerop (length candidate))
-	    (= 1 (length candidate)))
-	t
-      (if (eq (subseq candidate 0 1) (subseq candidate (- (length candidate) 1) (length candidate)))
-	  (palp (subseq (rest candidate) 0 (length candidate)))
-	nil))))
+(defun palp (x)
+  (equal x (reverse x)))
 
-(defun euler4 ()
-
-
-)
+(defun euler4 (&optional (digits 3))
+  (let* ((min (* 10 digits))
+	 (max (- (* min 10) 1)))
+    
+  
